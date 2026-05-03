@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Screen } from '../App';
 
-const API = 'http://localhost:8000';
+const API = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
 interface Props { onNavigate: (s: Screen) => void; }
 
